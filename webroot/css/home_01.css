@@ -39,12 +39,10 @@
     top: 0px;
 }
 .title_main_sp p {
-    font-family: Lato_I;
     font-size: 18px;
     color: #191919;
 }
 .title_main_sp span {
-    font-family: 'RobotoBold';
     font-size: 20px;
     color: #fff;
     text-transform: uppercase;
@@ -76,8 +74,8 @@
 }
 
 .xemthemsp {
-    font-family: 'RobotoBold';
     font-size: 12px;
+    text-decoration: none;
     color: #0054a6;
     position: absolute;
     z-index: 2;
@@ -119,11 +117,13 @@
 .zoomhinh img {
     transition: all 1s ease 0s
 }
-
 .zoomhinh:hover img {
     -ms-transform: scale(1.1);
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
+}
+.lazy {
+    width: 100%;
 }
 .duoisp {
     padding: 10px;
@@ -132,15 +132,13 @@
 .duoisp a {
     position: relative;
     display: block;
-    font-size: 16px;
+    font-size: 1.6vw;
     color: #2b2b2b;
-    font-family: 'RobotoRegular';
+    text-decoration: none;
 }
 .catchuoi1 {
     text-align: left;
     white-space: inherit;
-    line-height: 30px;
-    height: 30px;
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
@@ -148,24 +146,24 @@
     -webkit-box-orient: vertical;
 }
 .price_sanpham {
-    font-family: 'RobotoRegular';
     color: #2f2f2f;
-    font-size: 16px;
+    font-size: 1vw;
+    display: flex;
+    flex-direction: row;
+}
+.price_sanpham span {
+    color: #ed1c24;
+    font-weight: bold;
 }
 .new-price {
-    float: left;
-    padding-right: 20px;
-    padding-left: 10px;
+    padding-right: 5px;
+    padding-left: 5px;
 }
 .old-price {
-    float: left;
-    margin-top: 1px;
 }
 .old-price span {
-    font-family: 'RobotoRegular';
     color: #797979 !important;
     text-decoration: line-through;
-    font-size: 15px;
 }
 .clear {
     clear: both;
