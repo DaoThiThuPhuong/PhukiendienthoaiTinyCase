@@ -32,7 +32,7 @@
 .title_main_sp:before {
     content: '';
     position: absolute;
-    background: url(../images/icons/before_tieude.png) no-repeat left top;
+    background: url(../../images/images_Phuong/icons/before_tieude.png) no-repeat left top;
     width: 50px;
     height: 40px;
     left: -51px;
@@ -55,7 +55,7 @@
 .title_main_sp span:before {
     content: '';
     position: absolute;
-    background: url(../images/icons/after_tieude.png) no-repeat left top;
+    background: url(../../images/images_Phuong/icons/after_tieude.png) no-repeat left top;
     width: 36px;
     height: 40px;
     left: 100%;
@@ -78,7 +78,6 @@
     text-decoration: none;
     color: #0054a6;
     position: absolute;
-    z-index: 2;
     right: 10px;
     top: 12px;
 }
@@ -132,8 +131,6 @@
 .duoisp a {
     position: relative;
     display: block;
-    font-size: 1.6vw;
-    color: #2b2b2b;
     text-decoration: none;
 }
 .catchuoi1 {
@@ -144,22 +141,26 @@
     display: -webkit-box;
     -webkit-line-clamp: 1;
     -webkit-box-orient: vertical;
+    font-size: 1.6vw;
+    color: #2b2b2b;
+    margin: unset;
 }
 .price_sanpham {
     color: #2f2f2f;
-    font-size: 1vw;
     display: flex;
     flex-direction: row;
 }
 .price_sanpham span {
-    color: #ed1c24;
     font-weight: bold;
+    font-size: 1vw;
+    margin: unset;
+}
+.price_sanpham .red {
+    color: #ed1c24;
 }
 .new-price {
     padding-right: 5px;
     padding-left: 5px;
-}
-.old-price {
 }
 .old-price span {
     color: #797979 !important;
@@ -167,5 +168,10 @@
 }
 .clear {
     clear: both;
+}
+@media only screen and (max-width: 400px){
+    .price_sanpham span {
+        font-size: 0.9vw;
+    }
 }
 
