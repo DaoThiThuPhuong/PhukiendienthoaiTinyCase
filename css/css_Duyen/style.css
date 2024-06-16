@@ -4,6 +4,7 @@ body {
     margin-top: 70px;
     
 }
+
 /* CSS CHO HEADER */
 .headertop .col-12{
    padding: 10px;
@@ -57,7 +58,7 @@ body {
     }
    
     .navbar{
-        background-color: rgb(253, 213, 220);
+        background-color: rgb(212, 248, 244);
         display: inline-block;
         text-align: center;
     }
@@ -65,6 +66,7 @@ body {
         font-family:'Times New Roman', Times, serif;
         font-weight: bold;
         font-size: 30px;
+        margin-left: 15px;
      }
      .nav-item:hover{
         text-decoration: underline;
@@ -72,6 +74,7 @@ body {
     .nav-item.dropdown:hover .dropdown-menu {
         display: block;
       }
+
      /* CSS CHO FOOTER */
     .footer{
         background-color: rgb(172, 172, 172);
@@ -113,19 +116,26 @@ body {
      .copyright p{
         margin-bottom: 0px;
      }
-     .footer-right{
-        margin-right: 0px;
-     }
+     
      .footer-right{
         right: 1.5%;
-        bottom: 3%;
-        margin-right: 30px; 
+        bottom: 10%;
         position: fixed;
+        z-index: 1000;
      }
      .footer-right li{
         margin-bottom: 10px;
      }
-     
+
+     /* CSS CHO COREVALUE */
+     .text span{
+      margin: 0px;
+      text-align: left;
+     }
+     .corevalue{
+      margin-top: 30px;
+     }
+    
 
     
      
