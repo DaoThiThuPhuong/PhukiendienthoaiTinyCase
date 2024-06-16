@@ -1,0 +1,138 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    margin-top: 70px;
+    
+}
+/* CSS CHO HEADER */
+.headertop .col-12{
+   padding: 10px;
+}
+.headertop .user-actions a{
+   margin: 0 10px;
+}
+.headertop .user-actions{
+   text-align: right;
+   float: right;
+}
+  
+  .header{
+    background-color: rgba(214, 245, 242, 0.2);
+  }
+  .section{
+    background-color:rgba(214, 245, 242, 0.2);
+  }
+
+    .headertop {
+        background-color: #333;
+        color: white ;
+        padding: 0px;
+        height: 100%;
+       
+    }
+    .headertop a, span {
+        font-size: 12px;
+        color: rgb(161, 158, 158);
+        text-decoration: none;
+        margin: 0 10px;
+    }
+.headertop a:hover {
+        color: #fff;
+    }
+    .headertop .contact-info {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .headertop .contact-info span {
+        margin-right: 20px;
+    }
+    .headertop .user-actions {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .headertop .user-actions a {
+        margin-left: 10px;
+    }
+   
+    .navbar{
+        background-color: rgb(253, 213, 220);
+        display: inline-block;
+        text-align: center;
+    }
+     .navbar-brand{
+        font-family:'Times New Roman', Times, serif;
+        font-weight: bold;
+        font-size: 30px;
+     }
+     .nav-item:hover{
+        text-decoration: underline;
+     }
+    .nav-item.dropdown:hover .dropdown-menu {
+        display: block;
+      }
+     /* CSS CHO FOOTER */
+    .footer{
+        background-color: rgb(172, 172, 172);
+     }
+    .footer-col p{
+        font-family: Arial, Helvetica, sans-serif;
+        
+        color: black;
+        font-weight: bold;
+        padding: 20px;
+        margin-bottom: 0;
+     }
+     .footer li{
+        list-style-type: none;
+     }
+     .footer-col a{
+        text-decoration: none;
+        color: black;
+     }
+     .footer-col a:hover{
+        text-decoration: underline;
+        color: blue;
+     }
+     .social i{
+        font-size: 30px;
+     }
+     .social li{
+        display: inline-block;
+     }
+     .mess i:hover{
+        color: rgb(250, 100, 152);
+     }
+     .ig i:hover{
+        color: red;
+     }
+     .shopee i:hover{
+        color: rgb(243, 115, 69);
+     }
+     .copyright p{
+        margin-bottom: 0px;
+     }
+     .footer-right{
+        margin-right: 0px;
+     }
+     .footer-right{
+        right: 1.5%;
+        bottom: 3%;
+        margin-right: 30px; 
+        position: fixed;
+     }
+     .footer-right li{
+        margin-bottom: 10px;
+     }
+     
+
+    
+     
+
+     
+
+    
+
+    
+
