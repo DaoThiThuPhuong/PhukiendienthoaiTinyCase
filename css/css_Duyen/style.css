@@ -156,8 +156,23 @@ body {
             90% { transform: translate(1px, -1px); }
             100% { transform: translate(0, 0); }
     }
-   
+    /* CSS CHO BANG BAO HANH */
+   table {
+      text-align: left;
+      padding: 30px;
+      margin: 20px;
+   }
+   .table th {
+      padding: 15px;
+      border: solid 1px black;
+   }
+   .table td {
+      padding: 15px;
+      border: solid 1px black;
+      vertical-align: top;
 
+   }
+   
     
      
 

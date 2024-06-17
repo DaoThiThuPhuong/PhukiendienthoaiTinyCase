@@ -9,39 +9,32 @@ body {
 }
 
 /* Định dạng tiêu đề và footer */
-header {
+.header2 {
     background: #333;
     color: #fff;
     padding: 1rem 0;
     text-align: center;
 }
 
-header nav ul {
+.header2 nav ul {
     list-style: none;
     padding: 0;
     display: flex;
     justify-content: center;
 }
 
-header nav ul li {
+.header2 nav ul li {
     margin: 0 15px;
 }
 
-header nav ul li a {
+.header2 nav ul li a {
     color: #fff;
     text-decoration: none;
     font-weight: bold;
 }
 
-header nav ul li a:hover {
+.header2 nav ul li a:hover {
     text-decoration: underline;
-}
-
-footer {
-    background: #333;
-    color: #fff;
-    text-align: center;
-    padding: 1rem 0;
 }
 
 /* Định dạng phần chính */
