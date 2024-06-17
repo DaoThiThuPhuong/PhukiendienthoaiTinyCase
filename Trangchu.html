@@ -158,7 +158,7 @@
 
       <!-- Thanh menu -->
       <nav class="navbar navbar-expand-lg " >
-        <div class="container-fluid" >
+        <div class="container-fluid " >
           <a class="navbar-brand" href="">TINY CASE </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -234,6 +234,7 @@
       <div class="modal" id="Modalpopup" tabindex="-1">
         <div class="modal-dialog">
           <div class="modal-content">
+              <span><div data-bs-dismiss="modal" data-bs-target="Close" style="transform: rotate(180deg);">X</div></span>
               <img src="images/images_Duyen/anhpopup.png" alt="">
           </div>
         </div>
@@ -891,6 +892,7 @@
           </div>
           <div class="clear"></div>
         </div>
+        
       </div>
       <!-- Tin tức-->
       <div class="tintuc_container">
@@ -904,7 +906,7 @@
           <div class="news-wrapper">
               <div class="news-slider">
                   <a href="news.html" class="news">
-                      <div class="news__img">
+                      <div class="news__img zoomhinh">
                           <img src="https://cdn11.dienmaycholon.vn/filewebdmclnew/public/userupload/files/day-sac-dai-co-anh-huong-den-toc-do-sac-1.png" alt="">
                       </div>
                       <div class="news__body">
@@ -917,7 +919,7 @@
                       </div>
                   </a>
                   <a href="news.html" class="news">
-                      <div class="news__img">
+                      <div class="news__img zoomhinh">
                           <img src="https://www.tnc.com.vn/uploads/news/Trinh%202021/kinh-nghiem-su-dung-pin-sac-du-phong-hieu-qua-2.jpg" alt="">
                       </div>
                       <div class="news__body">
@@ -929,7 +931,7 @@
                       </div>
                   </a>
                   <a href="news.html" class="news">
-                      <div class="news__img">
+                      <div class="news__img zoomhinh">
                           <img src="https://cdn.tgdd.vn/hoi-dap/1050225/nhung-ly-do-khong-nen-dan-mieng-cuong-luc-cho-dien%20(4)-800x498.jpg" alt="">
                       </div>
                       <div class="news__body">
@@ -946,7 +948,60 @@
       </div>
   
 
+<!-- Dang ki nhan khuyen mai -->
+<div class="container-fluid km ">
+  <div class="row">
+      <div class="col-4 col-md-2 ps-5 ">
+        <img src="images/images_Duyen/subs.png" alt="Dang ki tu van" height="80px" width="80px">
+      </div>
+      <div class="col-8 col-md-5" style="text-align: center;">
+        <strong>Đăng ký nhận tin</strong>
+        <p>Đăng ký để nhận những chương trình khuyến mãi hot nhất của TinyCase</p>
+      </div>
+      <div class="col-md-5">
+        <form class="d-flex" role="search">
+          <input class="form-control me-2 " type="search" placeholder="Nhập email của bạn ... ">
+          <button class="btn btn-primary" type="submit" id="gui" ><i class="fa-solid fa-paper-plane"></i></button>
+        </form>
 
+      </div>
+  </div>
+</div>
+  <!-- Gia tri cot loi  -->
+  <div class="container-fluid corevalue">
+    <div class=" row " style="padding-bottom: 10px;" >
+      <div class=" col-6 col-md-3 item" style="display: flex;">
+        <span class="icon"><img src="images/images_Duyen/chinhhang.png" alt="" height="60px" width="60px"></span>
+        <div class="text">
+          <span>Sản phẩm</span>
+          <br><strong>CHÍNH HÃNG</strong>
+        </div>
+      </div>
+      <div class=" col-6 col-md-3 item" style="display: flex;">
+        <span class="icon"><img src="images/images_Duyen/vanchuyen.svg" alt="" height="60px" width="60px"></span>
+        <div class="text">
+          <span>Miễn phí vận chuyển</span>
+          <br><strong>TOÀN QUỐC</strong>
+        </div>
+      </div>
+      <div class=" col-6 col-md-3 item" style="display: flex;">
+        <span class="icon"><img src="images/images_Duyen/hotline.jpg" alt="" height="60px" width="60px"></span>
+        <div class="text">
+          <span>Hotline hỗ trợ</span>
+          <br><strong>0357194887</strong>
+        </div>
+      </div>
+      <div class=" col-6 col-md-3 item" style="display: flex;">
+        <span class="icon"><img src="images/images_Duyen/doitra.webp" alt="" height="60px" width="60px"></span>
+        <div class="text">
+          <span>Thủ tục đổi trả</span>
+          <br><strong>DỄ DÀNG</strong>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+   
     </div>
   </section>
    <!-- footer -->
@@ -964,58 +1019,7 @@
             width="40px"></a></li>
     </ul>
   </div>
-  <!-- Dang ki nhan khuyen mai -->
-  <div class="container-fluid km ">
-    <div class="row">
-        <div class="col-4 col-md-2 ps-5">
-          <img src="images/images_Duyen/subs.png" alt="Dang ki tu van" height="80px" width="80px">
-        </div>
-        <div class="col-8 col-md-5" style="text-align: center;">
-          <strong>Đăng ký nhận tin</strong>
-          <p>Đăng ký để nhận những chương trình khuyến mãi hot nhất của TinyCase</p>
-        </div>
-        <div class="col-md-5">
-          <form class="d-flex" role="search">
-            <input class="form-control me-2 " type="search" placeholder="Nhập email của bạn ... ">
-            <button class="btn btn-primary" type="submit" id="gui" ><i class="fa-solid fa-paper-plane"></i></button>
-          </form>
-
-        </div>
-    </div>
-  </div>
-    <!-- Gia tri cot loi  -->
-    <div class="container-fluid corevalue">
-      <div class=" row " style="padding-bottom: 10px;" >
-        <div class=" col-6 col-md-3 item" style="display: flex;">
-          <span class="icon"><img src="images/images_Duyen/chinhhang.png" alt="" height="60px" width="60px"></span>
-          <div class="text">
-            <span>Sản phẩm</span>
-            <br><strong>CHÍNH HÃNG</strong>
-          </div>
-        </div>
-        <div class=" col-6 col-md-3 item" style="display: flex;">
-          <span class="icon"><img src="images/images_Duyen/vanchuyen.svg" alt="" height="60px" width="60px"></span>
-          <div class="text">
-            <span>Miễn phí vận chuyển</span>
-            <br><strong>TOÀN QUỐC</strong>
-          </div>
-        </div>
-        <div class=" col-6 col-md-3 item" style="display: flex;">
-          <span class="icon"><img src="images/images_Duyen/hotline.jpg" alt="" height="60px" width="60px"></span>
-          <div class="text">
-            <span>Hotline hỗ trợ</span>
-            <br><strong>0357194887</strong>
-          </div>
-        </div>
-        <div class=" col-6 col-md-3 item" style="display: flex;">
-          <span class="icon"><img src="images/images_Duyen/doitra.webp" alt="" height="60px" width="60px"></span>
-          <div class="text">
-            <span>Thủ tục đổi trả</span>
-            <br><strong>DỄ DÀNG</strong>
-          </div>
-        </div>
-      </div>
-    </div>
+  
     <!-- footer -->
     <div class="footer">
     <div class="container-fluid ">
@@ -1061,32 +1065,24 @@
 
 
 
-<!-- SCRIPT  -->
-<script>
-document.getElementById('dangnhap').onclick = function() 
-{
-  alert('Đăng nhập thành công!');
-};
-document.getElementById('cartbutton').onclick = function() 
-{
-  alert('Tính năng này đang được cập nhật, mong quý khách thông cảm!');
-};
-document.getElementById('giohang').onclick = function() 
-  {
-    alert('Tính năng này đang được cập nhật, mong quý khách thông cảm!');
-  };
-  document.getElementById('timkiem').onclick = function() 
-  {
-    alert('Tính năng này đang được cập nhật, mong quý khách thông cảm!');
-  };
-  document.getElementById('gui').onclick = function() 
-  {
-    alert('Chúng tôi đã nhận được email của bạn! Hãy đón chờ những khuyến mãi của TinyCase nhé!!');
-  };
-</script>
-
-<!--New-->
-<script src="css/css_Hue/new.js"></script>
+  <!-- SCRIPT  -->
+  <script>
+    document.getElementById('cartbutton').onclick = function() 
+    {
+      alert('Tính năng này đang được cập nhật, mong quý khách thông cảm!');
+    };
+    document.getElementById('giohang').onclick = function() 
+      {
+        alert('Tính năng này đang được cập nhật, mong quý khách thông cảm!');
+      };
+      document.getElementById('timkiem').onclick = function() 
+      {
+        alert('Tính năng này đang được cập nhật, mong quý khách thông cảm!');
+      };
+    </script>
+    
+    <!--New-->
+    <script src="css/css_Hue/new.js"></script>
 </body>
 
 </html>

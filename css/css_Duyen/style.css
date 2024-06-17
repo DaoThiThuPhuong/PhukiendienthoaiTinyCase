@@ -18,10 +18,10 @@ body {
 }
   
   .header{
-    background-color: rgba(214, 245, 242, 0.2);
+    background-color: rgba(246, 184, 130, 0.2);
   }
   .section{
-    background-color:rgba(214, 245, 242, 0.2);
+    background-color:rgba(246, 184, 130, 0.2);
   }
 
     .headertop {
@@ -58,9 +58,16 @@ body {
     }
    
     .navbar{
-        background-color: rgb(212, 248, 244);
+        background-color:#EE4D2D;
         display: inline-block;
         text-align: center;
+
+    }
+    .navbar a{
+      color: #fff;
+    }
+    .dropdown-menu a{
+      color: black;
     }
      .navbar-brand{
         font-family:'Times New Roman', Times, serif;
@@ -68,9 +75,7 @@ body {
         font-size: 30px;
         margin-left: 15px;
      }
-     .nav-item:hover{
-        text-decoration: underline;
-     }
+    
     .nav-item.dropdown:hover .dropdown-menu {
         display: block;
       }
