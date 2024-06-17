@@ -17,7 +17,7 @@
     crossorigin="anonymous"></script>
 
   <!---Hue-->
-  <!--Thêm CSS-->>
+  <!--Thêm CSS-->
   <link rel="stylesheet" href="css/css_Hue/new.css">
 
   <!-- Phuong >>START -->
@@ -88,7 +88,7 @@
               </div>
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-secondary">Đăng nhập</button>
+              <button type="button" class="btn btn-secondary" id="dangnhap" data-bs-dismiss="modal" aria-label="Close">Đăng nhập</button>
               <button type="button" class="btn btn-outline-secondary">Quên mật khẩu</button>
             </div>
           </div>
@@ -157,8 +157,8 @@
       </div>
 
       <!-- Thanh menu -->
-      <nav class="navbar navbar-expand-lg ">
-        <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg " >
+        <div class="container-fluid" >
           <a class="navbar-brand" href="">TINY CASE </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -174,7 +174,7 @@
                 <a class="nav-link " aria-current="page" href="tranggioithieu.html">GIỚI THIỆU</a>
               </li>
               <li class="nav-item dropdown px-3">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                <a class="nav-link dropdown-toggle" href="phukien.html" role="button" data-bs-toggle="dropdown"
                   aria-expanded="false">PHỤ KIỆN ĐIỆN THOẠI</a>
                 <ul class="dropdown-menu">
                   <li><a class="dropdown-item" href="trangchuyenmuc/phukiendienthoai/sanphambanchay.html">Sản phẩm bán chạy</a></li>
@@ -189,7 +189,7 @@
                 </ul>
               </li>
               <li class="nav-item dropdown px-3">
-                <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown"
+                <a class="nav-link dropdown-toggle" href="linhkien.html" type="button" data-bs-toggle="dropdown"
                   aria-expanded="false">LINH KIỆN ĐIỆN THOẠI</a>
                 <ul class="dropdown-menu">
                   <li><a class="dropdown-item" href="trangchuyenmuc/linhkiendienthoai/capsacdt.html">Cáp sạc điện thoại</a></li>
@@ -222,23 +222,11 @@
     </div>
   </header>
   <section>
+    <!-- POPUP -->
     <div class="section">
-      <!-- Footer-right  -->
-      <div class=" footer-right">
-        <ul class="contact " style="list-style-type: none;">
-          <li class="Cart zoomhinh"><a href="#" type="button" id="giohang"><img src="images/images_Duyen/giohang.png" alt="Gio hang" height="45px"
-                width="45px"></a></li>
-          <li class=" Facebook zoomhinh"><a href="https://www.facebook.com/dream.couturess?mibextid=LQQJ4d" type="button"><img src="images/images_Duyen/Facebook.svg" alt="Facebook"
-                height="40px" width="40px"></a></li>
-          <li class="Instagram zoomhinh"><a href="https://www.instagram.com/tiny.case?igsh=ZWo2NWRiaG13YXhm" type="button"><img src="images/images_Duyen/Insta.webp" alt="Instagram"
-                height="40px" width="40px"></a></li>
-          <li class="Zalo zoomhinh"><a href="" type="button"><img src="images/images_Duyen/zalo.png" alt="Zalo" height="40px"
-                width="40px"></a></li>
-        </ul>
-      </div>
       <div class="popup" style="position: fixed; margin-left: 0px; bottom: 30%; z-index: 1000;">
         <div class="container ">
-          <a href="#" type="button" data-bs-toggle="modal" data-bs-target="#Modalpopup"><img src="images/images_Duyen/qua.png" alt="Popup" height="50px" width="50px"></a>
+          <a class="hopqua" href="#" type="button" data-bs-toggle="modal" data-bs-target="#Modalpopup"><i class="fa-solid fa-gift" style="font-size: 40px;"></i></a>
         </div>
       </div>
 
@@ -954,47 +942,81 @@
           </div>
           <button class="next-btn">&gt;</button>
       </div>
-      
-      <!-- Duyen -->
-      <!-- Gia tri cot loi  -->
-      <div class="container-fluid corevalue">
-        <div class=" row " style="padding-bottom: 10px;" >
-          <div class=" col-6 col-md-3 item" style="display: flex;">
-            <span class="icon"><img src="images/images_Duyen/chinhhang.png" alt="" height="60px" width="60px"></span>
-            <div class="text">
-              <span>Sản phẩm</span>
-              <br><strong>CHÍNH HÃNG</strong>
-            </div>
-          </div>
-          <div class=" col-6 col-md-3 item" style="display: flex;">
-            <span class="icon"><img src="images/images_Duyen/vanchuyen.svg" alt="" height="60px" width="60px"></span>
-            <div class="text">
-              <span>Miễn phí vận chuyển</span>
-              <br><strong>TOÀN QUỐC</strong>
-            </div>
-          </div>
-          <div class=" col-6 col-md-3 item" style="display: flex;">
-            <span class="icon"><img src="images/images_Duyen/hotline.jpg" alt="" height="60px" width="60px"></span>
-            <div class="text">
-              <span>Hotline hỗ trợ</span>
-              <br><strong>0357194887</strong>
-            </div>
-          </div>
-          <div class=" col-6 col-md-3 item" style="display: flex;">
-            <span class="icon"><img src="images/images_Duyen/doitra.webp" alt="" height="60px" width="60px"></span>
-            <div class="text">
-              <span>Thủ tục đổi trả</span>
-              <br><strong>DỄ DÀNG</strong>
-            </div>
-          </div>
-        </div>
-      </div>
+  
 
 
     </div>
   </section>
-  <!-- footer -->
-  <footer class="footer">
+   <!-- footer -->
+  <footer>
+   <!-- Footer-right  -->
+   <div class=" footer-right">
+    <ul class="contact " style="list-style-type: none;">
+      <li class="Cart zoomhinh"><a href="#" type="button" id="giohang"><img src="images/images_Duyen/giohang.png" alt="Gio hang" height="45px"
+            width="45px"></a></li>
+      <li class=" Facebook zoomhinh"><a href="https://www.facebook.com/dream.couturess?mibextid=LQQJ4d" type="button"><img src="images/images_Duyen/Facebook.svg" alt="Facebook"
+            height="40px" width="40px"></a></li>
+      <li class="Instagram zoomhinh"><a href="https://www.instagram.com/tiny.case?igsh=ZWo2NWRiaG13YXhm" type="button"><img src="images/images_Duyen/Insta.webp" alt="Instagram"
+            height="40px" width="40px"></a></li>
+      <li class="Zalo zoomhinh"><a href="" type="button"><img src="images/images_Duyen/zalo.png" alt="Zalo" height="40px"
+            width="40px"></a></li>
+    </ul>
+  </div>
+
+  <!-- Dang ki nhan khuyen mai -->
+  <div class="container-fluid km mt-5 ">
+    <div class="row">
+        <div class="col-1 col-md-2 ps-5">
+          <img src="images/images_Duyen/subs.png" alt="Dang ki tu van" height="80px" width="80px">
+        </div>
+        <div class="col-md-5" style="text-align: center;">
+          <strong>Đăng ký nhận tin</strong>
+          <p>Đăng ký để nhận những chương trình khuyến mãi hot nhất của TinyCase</p>
+        </div>
+        <div class="col-md-5">
+          <form class="d-flex" role="search">
+            <input class="form-control me-2 " type="search" placeholder="Nhập email của bạn ... ">
+            <button class="btn btn-primary" type="submit" id="gui" ><i class="fa-solid fa-paper-plane"></i></button>
+          </form>
+
+        </div>
+    </div>
+  </div>
+    <!-- Gia tri cot loi  -->
+    <div class="container-fluid corevalue">
+      <div class=" row " style="padding-bottom: 10px;" >
+        <div class=" col-6 col-md-3 item" style="display: flex;">
+          <span class="icon"><img src="images/images_Duyen/chinhhang.png" alt="" height="60px" width="60px"></span>
+          <div class="text">
+            <span>Sản phẩm</span>
+            <br><strong>CHÍNH HÃNG</strong>
+          </div>
+        </div>
+        <div class=" col-6 col-md-3 item" style="display: flex;">
+          <span class="icon"><img src="images/images_Duyen/vanchuyen.svg" alt="" height="60px" width="60px"></span>
+          <div class="text">
+            <span>Miễn phí vận chuyển</span>
+            <br><strong>TOÀN QUỐC</strong>
+          </div>
+        </div>
+        <div class=" col-6 col-md-3 item" style="display: flex;">
+          <span class="icon"><img src="images/images_Duyen/hotline.jpg" alt="" height="60px" width="60px"></span>
+          <div class="text">
+            <span>Hotline hỗ trợ</span>
+            <br><strong>0357194887</strong>
+          </div>
+        </div>
+        <div class=" col-6 col-md-3 item" style="display: flex;">
+          <span class="icon"><img src="images/images_Duyen/doitra.webp" alt="" height="60px" width="60px"></span>
+          <div class="text">
+            <span>Thủ tục đổi trả</span>
+            <br><strong>DỄ DÀNG</strong>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- footer -->
+    <div class="footer">
     <div class="container-fluid ">
       <div class="row ">
         <div class=" col-12 col-md-4 tomtat">
@@ -1032,13 +1054,18 @@
     <div class="copyright " style=" margin-left: 30px; font-size: 15px; text-align: center;">
       <p>&copy; 2024 Tiny Case. All rights reserved.</p>
     </div>
-  </footer>
+  </div>
+</footer>
 
 
 
 
 <!-- SCRIPT  -->
 <script>
+document.getElementById('dangnhap').onclick = function() 
+{
+  alert('Đăng nhập thành công!');
+};
 document.getElementById('cartbutton').onclick = function() 
 {
   alert('Tính năng này đang được cập nhật, mong quý khách thông cảm!');
@@ -1050,6 +1077,10 @@ document.getElementById('giohang').onclick = function()
   document.getElementById('timkiem').onclick = function() 
   {
     alert('Tính năng này đang được cập nhật, mong quý khách thông cảm!');
+  };
+  document.getElementById('gui').onclick = function() 
+  {
+    alert('Chúng tôi đã nhận được email của bạn! Hãy đón chờ những khuyến mãi của TinyCase nhé!!');
   };
 </script>
 
