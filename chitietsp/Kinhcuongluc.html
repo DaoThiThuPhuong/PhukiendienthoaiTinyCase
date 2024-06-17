@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="../css/css_Phong/index1.css"> <!-- liên kết index.css -->
+    <script src="./script.js" defer></script>
+<body>
+    <div class="main-container"> <!-- Lớp chính -->
+        <div class="product-info"><!-- Thông tin sản phẩm -->
+            <img src="../images/Images_Phong/kinhcuongluc1.jpg" alt="Product Image" class="product-image">
+        </div>
+        <div class="product-info"> 
+            <div class="product-text"> <!-- Nội dung sản phẩm cần bán -->
+                    <div><p id="fav">Yêu Thích</p>Kính Cường Lực Điện Thoại Samsung AMCX Full Viền </div>
+            </div>
+            <div class="product-rating"><!-- Đánh giá sản phẩm -->
+                <div class="product-rating-star">
+                    <i class="star">★</i>
+                    <i class="star">★</i>
+                    <i class="star">★</i>
+                    <i class="star">★</i>
+                    <i class="star">★</i>
+                </div>
+                <div class="product-rating-comment"><!-- Đánh giá sản phẩm -->
+                    <div id="highlight">1k</div>
+                    <div>đánh giá</div>
+                </div>
+                <div class="product-rating-sold"><!-- Sản phẩm đã bán -->
+                    <div id="highlight">10.8K</div>
+                    <div>lượt bán</div>
+                </div>
+            </div>
+            <div class="product-price"><!-- Giá sản phẩm -->
+                <span>₫ 300.000</span>
+                <p>₫ 20.000</p>
+                <div>25% GIẢM</div>
+            </div>
+            <div class="product-options"><!-- Tùy chọn sản phẩm -->
+                <div class="product-options-details">
+                    <div class="item-1">Chính Sách Trả Hàng</div>
+                    <div class="item-2">Trả hàng 15 ngày</div>
+                    <div class="item-3">Đổi ý miễn phí</div>
+                </div>
+                <div class="product-options-details"><!-- Thông tin chi tiết tùy chọn sản phẩm -->
+                    <div class="item-1">Combo Khuyến Mãi</div>
+                    <div class="item-2" id="special">Mua 3 & giảm ₫10.000</div>
+                </div>
+                <div class="product-options-details"><!-- Thông tin chi tiết tùy chọn sản phẩm-->
+                    <div class="item-1">Số Lượng</div>
+                    <div class="item-2">
+                        <div class="counter-container"><!-- Nút tăng giảm số lượng cần mua -->
+                            <button id="decrement" onclick="decrement()">-</button>
+                            <div id="count">1</div>
+                            <button id="increment" onclick="increment()">+</button>
+                        </div>
+                    </div>
+                    <div class="item-3">3595 sản phẩm có sẵn</div>
+                </div>
+            </div>
+            <div class="product-actions"> <!-- Nút hành động sản phẩm -->
+                <button class="button-add">Thêm Vào Giỏ Hàng</button>
+                <button class="button-buy">Mua Ngay</button>
+            </div>
+        </div>
+    </div>
+    <div class="detail-container"><!--Chi tiết sanr phẩm -->
+        <div class="detail-title">CHI TIẾT SẢN PHẨM</div>
+        <div class="detail-categories">
+            <div class="detail-categories-item">
+                <div class="detail-categories-item-title">Danh Mục</div>
+                <div class="detail-categories-item-content">Điện Thoại & Phụ Kiện > Kính cường lực</div>
+            </div>
+            <div class="detail-categories-item">
+                <div class="detail-categories-item-title">Chất liệu</div>
+                <div class="detail-categories-item-content">Nhựa, Silicon</div>
+            </div>
+            <div class="detail-categories-item">
+                <div class="detail-categories-item-title">Thương hiệu</div>
+                <div class="detail-categories-item-content">AMCX</div>
+            </div>
+            <div class="detail-categories-item">
+                <div class="detail-categories-item-title">Loại </div>
+                <div class="detail-categories-item-content">Khác</div>
+            </div>
+            <div class="detail-categories-item">
+                <div class="detail-categories-item-title">Kho hàng</div>
+                <div class="detail-categories-item-content">35964 sản phẩm</div>
+            </div>
+            <div class="detail-categories-item">
+                <div class="detail-categories-item-title">Gửi từ</div>
+                <div class="detail-categories-item-content">Shanghai</div>
+            </div>
+        </div>
+        <div class="detail-title">MÔ TẢ SẢN PHẨM</div> <!-- Mô tả sản phẩm -->
+        <div class="detail-descriptions">
+            <div>👏 Chào mừng đến với Shop</div>
+            <div>🌞 Tất cả các sản phẩm của chúng tôi Có hàng, Chúng tôi sẽ giao hàng trong vòng 72 giờ kể từ khi nhận được đơn đặt hàng của bạn</div>
+            <div>🚚Chúng tôi gửi từ Trung Quốc, nó thường mất 7-15 ngày để đến nơi.</div>
+            <div>🚀 Nếu bạn có bất kỳ câu hỏi nào về hàng hóa bạn nhận được, vui lòng liên hệ với chúng tôi</div>
+            <div>🎁 Chấp nhận bán lẻ, bán buôn và bán hàng trực tiếp</div>
+            <div> 💖Mua sắm vui vẻ!💖</div>
+            <div>💜Lưu Ý: Xin lưu ý rằng sự khác biệt màu sắc nhẹ nên được chấp nhận do ánh sáng và màn hình.</div>
+            <div>☆☆☆Phản hồi☆☆☆</div>
+            <div>Chúng tôi phụ thuộc vào sự hài lòng của khách hàng để thành công. Do đó, phản hồi tích cực của bạn và DSR 5 Điểm là cực kỳ quan trọng đối với chúng tôi. Nếu bạn hài lòng với các mặt hàng của chúng tôi, xin vui lòng dành một phút để lại phản hồi tích cực của bạn. Cảm ơn bạn😘</div>
+        </div>
+    </div>
+    <div class="suggestion-container"> <!-- Phần gợi ý-->
+        <div class="suggestion-container-detail">
+            <div class="body-middle-suggestion">
+                <div class="body-middle-suggestion-top">
+                    <div>SẢN PHẨM CÙNG LOẠI</div>
+                </div>
+                <div class="body-middle-suggestion-content">
+                    <div class="body-middle-suggestion-content-items">
+                        <div id="suggestion-discount">
+                            <div>&nbsp;-32%&nbsp;</div>
+                        </div>
+                        <img id="suggestion-main" src="../images/Images_Phong/kinhcuongluc2.jpg" />
+                        <div id="suggestion-text">CKính cường lực chống bụi cho Iphone các đời từ iPhone 6 đến iPhone 14</div>
+                        <div id="suggestion-prize">₫20.000</div>
+                        <div id="suggestion-sold">Đã bán 70</div>
+                    </div>
+                    <div class="body-middle-suggestion-content-items">
+                        <div id="suggestion-discount">
+                            <div>&nbsp;-45%&nbsp;</div>
+                        </div>
+                        <img id="suggestion-main" src="../images/Images_Phong/kinhcuongluc3.jpg" />
+                        <div id="suggestion-text">Kính cường lực chống va chạm cho các đời iPhone</div>
+                        <div id="suggestion-prize">₫270.000</div>
+                        <div id="suggestion-sold">Đã bán 90</div>
+                    </div>
+                    <div class="body-middle-suggestion-content-items">
+                        <div id="suggestion-discount">
+                            <div>&nbsp;-32%&nbsp;</div>
+                        </div>
+                        <img id="suggestion-main" src="../images/Images_Phong/kinhcuongluc4.jpg" />
+                        <div id="suggestion-text"> Kính cường lực hiệu con bò húc</div>
+                        <div id="suggestion-prize">₫22.680</div>
+                        <div id="suggestion-sold">Đã bán 57</div>
+                    </div>
+                    <div class="body-middle-suggestion-content-items">
+                        <div id="suggestion-discount">
+                            <div>&nbsp;-35%&nbsp;</div>
+                        </div>
+                        <img id="suggestion-main" src="../images/Images_Phong/kinhcuongluc5.jpg" />
+                        <div id="suggestion-text">Kính cường lực Ugreen hiệu ứng xanh </div>
+                        <div id="suggestion-prize">₫170.680</div>
+                        <div id="suggestion-sold">Đã bán 16</div>
+                    </div>
+                    <div class="body-middle-suggestion-content-items">
+                        <div id="suggestion-discount">
+                            <div>&nbsp;-37%&nbsp;</div>
+                        </div>
+                        <img id="suggestion-main" src="../images/Images_Phong/kinhcuongluc6.jpg" />
+                        <div id="suggestion-text">Kính cường lực OGGlass siêu bền</div>
+                        <div id="suggestion-prize">₫189.000</div>
+                        <div id="suggestion-sold">Đã bán 218</div>
+                    </div>
+                    <div class="body-middle-suggestion-content-items">
+                        <div id="suggestion-discount">
+                            <div>&nbsp;-58%&nbsp;</div>
+                        </div>
+                        <img id="suggestion-main" src="../images/Images_Phong/kinhcuongluc7.jpg" />
+                        <div id="suggestion-text">Kính cường lực hiệu kingkong siêu bền</nav></div>
+                        <div id="suggestion-prize">₫100.900</div>
+                        <div id="suggestion-sold">Đã bán 69,7k</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+                </div>
+                <div class="body-middle-suggestion-bottom">
+                    <button>Xem Thêm</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="suggestion-container"> <!-- Phần gợi ý-->
+        <div class="suggestion-container-detail">
+            <div class="body-middle-suggestion">
+                <div class="body-middle-suggestion-top">
+                    <div>SẢN PHẨM BÁN CHẠY CỦA SHOP </div>
+                </div>
+                <div class="body-middle-suggestion-content">
+                    <div class="body-middle-suggestion-content-items">
+                        <div id="suggestion-discount">
+                            <div>&nbsp;-32%&nbsp;</div>
+                        </div>
+                        <img id="suggestion-main" src="../images/Images_Phong/banchay1.jpg" />
+                        <div id="suggestion-text">Ốp điện thoại nghệ thuật cho Iphone các đời từ iPhone 6 đến iPhone 14</div>
+                        <div id="suggestion-prize">₫200.000</div>
+                        <div id="suggestion-sold">Đã bán 700k</div>
+                    </div>
+                    <div class="body-middle-suggestion-content-items">
+                        <div id="suggestion-discount">
+                            <div>&nbsp;-45%&nbsp;</div>
+                        </div>
+                        <img id="suggestion-main" src="../images/Images_Phong/banchay2.jpg" />
+                        <div id="suggestion-text">Ốp điện thoại trong suốt nghệ thuật cho các đời iPhone</div>
+                        <div id="suggestion-prize">₫270.000</div>
+                        <div id="suggestion-sold">Đã bán 90k</div>
+                    </div>
+                    <div class="body-middle-suggestion-content-items">
+                        <div id="suggestion-discount">
+                            <div>&nbsp;-32%&nbsp;</div>
+                        </div>
+                        <img id="suggestion-main" src="../images/Images_Phong/banchay3.jpg" />
+                        <div id="suggestion-text"> Ốp điện thoại cái dép dễ thương cho các nàng thơ</div>
+                        <div id="suggestion-prize">₫220.680</div>
+                        <div id="suggestion-sold">Đã bán 57k</div>
+                    </div>
+                    <div class="body-middle-suggestion-content-items">
+                        <div id="suggestion-discount">
+                            <div>&nbsp;-35%&nbsp;</div>
+                        </div>
+                        <img id="suggestion-main" src="../images/Images_Phong/kinhcuongluc5.jpg" />
+                        <div id="suggestion-text">Kính cường lực Ugreen hiệu ứng xanh hiệu đặc biệt </div>
+                        <div id="suggestion-prize">₫170.680</div>
+                        <div id="suggestion-sold">Đã bán 160k</div>
+                    </div>
+                    <div class="body-middle-suggestion-content-items">
+                        <div id="suggestion-discount">
+                            <div>&nbsp;-37%&nbsp;</div>
+                        </div>
+                        <img id="suggestion-main" src="../images/Images_Phong/kinhcuongluc6.jpg" />
+                        <div id="suggestion-text">Kính cường lực OGGlass siêu bền rẻ đẹp</div>
+                        <div id="suggestion-prize">₫189.000</div>
+                        <div id="suggestion-sold">Đã bán 218k</div>
+                    </div>
+                    <div class="body-middle-suggestion-content-items">
+                        <div id="suggestion-discount">
+                            <div>&nbsp;-58%&nbsp;</div>
+                        </div>
+                        <img id="suggestion-main" src="../images/Images_Phong/kinhcuongluc7.jpg" />
+                        <div id="suggestion-text">Kính cường lực hiệu kingkong siêu bền chống va đạp cực tốt</nav></div>
+                        <div id="suggestion-prize">₫100.900</div>
+                        <div id="suggestion-sold">Đã bán 69,7k</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+                </div>
+                <div class="body-middle-suggestion-bottom">
+                    <button>Xem Thêm</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
