@@ -1,0 +1,32 @@
+const newsSlider = document.querySelector('.news-slider');
+const newsItems = document.querySelectorAll('.news');
+const prevBtn = document.querySelector('.prev-btn');
+const nextBtn = document.querySelector('.next-btn');
+
+let currentIndex = 0;
+const itemsPerView = 2;
+
+prevBtn.addEventListener('click', () => {
+    if (currentIndex > 0) {
+        currentIndex -= itemsPerView;
+        if (currentIndex < 0) {
+            currentIndex = 0;
+        }
+        updateSliderPosition();
+    }
+});
+
+nextBtn.addEventListener('click', () => {
+    if (currentIndex < newsItems.length - itemsPerView) {
+        currentIndex += itemsPerView;
+        if (currentIndex > newsItems.length - itemsPerView) {
+            currentIndex = newsItems.length - itemsPerView;
+        }
+        updateSliderPosition();
+    }
+});
+
+function updateSliderPosition() {
+    const offset = -currentIndex * 50; // Mỗi mục chiếm 50% chiều rộng
+    newsSlider.style.transform = `translateX(${offset}%)`;
+}
