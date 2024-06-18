@@ -27,7 +27,7 @@ body {
 
 .product-text #fav {
     color: white;
-    background-color: #EE4D2D;
+    background-color: rgb(0, 84, 166);
     font-size: 15px;
     padding: 3px;
     border-radius: 5px;
@@ -52,13 +52,13 @@ body {
 .product-price p {
     font-size: 18px;
     padding-right: 15px;
-    color: #EE4D2D;
+    color: rgb(250, 70, 70);
 }
 
 .product-price div {
     font-size: 10px;
     color: white;
-    background-color: #EE4D2D;
+    background-color: rgb(250, 70, 70);
     padding: 2px;
     border-radius: 5px;
     margin-bottom: 3px;
@@ -99,7 +99,7 @@ body {
 }
 
 .product-rating .star {
-    color: #EE4D2D;
+    color: rgb(250, 70, 70);
     font-size: 18px;
 }
 
@@ -126,7 +126,7 @@ body {
 
 .product-options-details #special {
     color: white;
-    background-color: #EE4D2D;
+    background-color: rgb(250, 70, 70);
     padding: 3px;
     border-radius: 5px;
     margin-bottom: 3px;
@@ -172,9 +172,9 @@ body {
 .product-actions .button-add {
     width: 150px;
     padding: 10px 0 10px 0;
-    background-color: #FFEEEA;
-    color: #EE4D2D;
-    border: 1px solid #EE4D2D;
+    background-color: rgba(0, 84, 166, 0.1);
+    color: rgba(0, 84, 166, 0.5);
+    border: 1px solid rgb(0, 84, 166);
     border-radius: 5px;
     cursor: pointer;
     margin-right: 10px;
@@ -187,15 +187,15 @@ body {
 .product-actions .button-buy {
     width: 150px;
     padding: 10px 0 10px 0;
-    background-color: #EE4D2D;
+    background-color: rgb(0, 84, 166);
     color: #FFEEEA;
-    border: 1px solid #EE4D2D;
+    border: 1px solid rgb(0, 84, 166);
     border-radius: 5px;
     cursor: pointer;
 }
 
 .product-actions .button-buy:hover {
-    background-color: #e66a51;
+    background-color: rgba(0, 84, 166, 0.5);
 }
 
 .detail-container {
@@ -262,12 +262,12 @@ body {
 
 .body-middle-suggestion-top {
     background-color: #FFFFFF;
-    color: #F14D2D;
+    color: rgb(0, 84, 166);
     display: flex;
     justify-content: center;
     font-size: 16px;
     padding: 20px;
-    border-bottom: 4px solid #F14D2D;
+    border-bottom: 4px solid rgb(0, 84, 166);
 }
 
 .body-middle-suggestion-content {
@@ -289,7 +289,7 @@ body {
     top: 0; 
     right: 0;
     background-color: #FFE97A;
-    color: #F14D2D;
+    color: rgb(0, 84, 166);
     font-size: 14px;
     padding: 2px;
     z-index: 1;
@@ -335,7 +335,7 @@ body {
 }
 
 .body-middle-suggestion-content-items #suggestion-prize {
-    color: #EE4D2D;
+    color: rgb(0, 84, 166);
     position: absolute;
     font-size: 16px;
     bottom: 10px;
@@ -379,7 +379,7 @@ body {
     .body-middle-suggestion-top {
         font-size: 7px;
         padding: 10px;
-        border-bottom: 2px solid #F14D2D;
+        border-bottom: 2px solid rgb(0, 84, 166);
     }
     
     .body-middle-suggestion-content {
