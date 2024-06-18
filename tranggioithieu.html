@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TinyCase - Chuyên phụ kiện điện thoại</title>
+    <link rel="stylesheet" href="css/css_Duyen/style.css">
+    <!-- Thu vien FontAwesome cho cac icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Thu vien Boostrap5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/css_Phuong/introduce.css">
+</head>
+
+<body>
+    <!-- Duyen -->
+    <!-- Header -->
+    <header>
+        <div class="header">
+            <!-- Header top -->
+            <div class="container-fluid headertop ">
+                <div class="row ">
+                    <div class=" col-12 col-md-4 text-left">
+                        <span>Email: <a href="mailto:TinyCase@gmail.com">TinyCase@gmail.com</a></span>
+                    </div>
+                    <div class="col-12 col-md-2 text-center">
+                        <!-- Phần này trống để giữ khoảng cách đều giữa các cột -->
+                    </div>
+                    <div class=" col-12 col-md-6 user-actions text-center">
+                        <span data-bs-toggle="modal" data-bs-target="#ModalDN"><a type="button" href="#">Đăng
+                                nhập</a></span>
+                        <span data-bs-toggle="modal" data-bs-target="#ModalDK"><a href="#" type="button">Đăng
+                                ký</a></span>
+                        <span data-bs-toggle="modal" data-bs-target="#ModalLH"><a href="#" type="button">Liên
+                                hệ</a></span>
+                    </div>
+                </div>
+            </div>
+            <!-- MODAL DANG NHAP -->
+            <div class="modal" id="ModalDN" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Đăng nhập tài khoản</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <!-- Form-Control-Dangnhap -->
+                            <div class="mb-3">
+                                <input type="email" class="form-control" id="exampleFormControlInput1"
+                                    placeholder="Email">
+                            </div>
+                            <div class="mb-3">
+                                <input type="email" class="form-control" id="exampleFormControlInput1"
+                                    placeholder="Password">
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" id="dangnhap" data-bs-dismiss="modal"
+                                aria-label="Close">Đăng nhập</button>
+                            <button type="button" class="btn btn-outline-secondary">Quên mật khẩu</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MODAL DANG KY -->
+            <div class="modal" id="ModalDK" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Đăng ký tài khoản</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <!-- Form-Control-Dangky -->
+                            <div class="mb-3">
+                                <input type="email" class="form-control" id="exampleFormControlInput1"
+                                    placeholder="Họ và tên">
+                            </div>
+                            <div class="mb-3">
+                                <input type="email" class="form-control" id="exampleFormControlInput1"
+                                    placeholder="Số điện thoại">
+                            </div>
+                            <div class="mb-3">
+                                <input type="email" class="form-control" id="exampleFormControlInput1"
+                                    placeholder="Email">
+                            </div>
+                            <div class="mb-3">
+                                <input type="email" class="form-control" id="exampleFormControlInput1"
+                                    placeholder="Mật khẩu">
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary">Đăng ký</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- MODAL LIEN HE -->
+            <div class="modal" id="ModalLH" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Liên hệ TinyCase</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Bạn hãy liên hệ ngay tới Hotline của TinyCase: <a href="tel:0357194887">0357194887</a>
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Thanh LOGO tim kiem -->
+            <div class="container-fluid logo">
+                <div class="row w-100">
+                    <div class="col-md-6 d-flex justify-content-center align-items-center">
+                        <a href=""><img src="/images/images_Duyen/logosvg.png" alt="Logo" lass="img-fluid"></a>
+                    </div>
+                    <div class="col-md-6 d-flex justify-content-center align-items-center">
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2 " type="search" placeholder="Tìm kiếm...">
+                            <button class="btn btn-outline-dark" type="submit" id="timkiem"><i
+                                    class="fas fa-search"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Thanh menu -->
+            <nav class="navbar navbar-expand-lg ">
+                <div class="container-fluid ">
+                    <a class="navbar-brand" href="./Trangchu.html">TINY CASE </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-center px-4 " id="navbarSupportedContent">
+                        <ul class="navbar-nav mx-auto mb-2 mb-lg-0 ">
+                            <li class="nav-item px-3">
+                                <a class="nav-link" aria-current="page" href="./Trangchu.html">TRANG CHỦ</a>
+                            </li>
+                            <li class="nav-item px-3">
+                                <a class="nav-link active" aria-current="page" href="tranggioithieu.html">GIỚI THIỆU</a>
+                            </li>
+                            <li class="nav-item dropdown px-3">
+                                <a class="nav-link dropdown-toggle" href="phukien.html" id="phukien-link" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">PHỤ KIỆN ĐIỆN THOẠI</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item"
+                                            href="trangchuyenmuc/phukiendienthoai/sanphambanchay.html">Sản phẩm bán
+                                            chạy</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item"
+                                            href="trangchuyenmuc/phukiendienthoai/hangmoive.html">Hàng mới về</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item"
+                                            href="trangchuyenmuc/phukiendienthoai/oplung_baoda.html">Ốp lưng - Bao
+                                            da</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown px-3">
+                                <a class="nav-link dropdown-toggle" href="linhkien.html" id="linhkien-link"
+                                    type="button" data-bs-toggle="dropdown" aria-expanded="false">LINH KIỆN ĐIỆN
+                                    THOẠI</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item"
+                                            href="trangchuyenmuc/linhkiendienthoai/capsacdt.html">Cáp sạc điện thoại</a>
+                                    </li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item"
+                                            href="trangchuyenmuc/linhkiendienthoai/tainghe.html">Tai nghe</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item"
+                                            href="trangchuyenmuc/linhkiendienthoai/loabluetooth.html">Loa Bluetooth</a>
+                                    </li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item"
+                                            href="trangchuyenmuc/linhkiendienthoai/kinhcuongluc.html">Kính cường lực</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item px-3">
+                                <a class="nav-link" href="tintuc/trangtintuc.html">TIN TỨC</a>
+                            </li>
+                            <ul class="navbar-nav">
+                                <li class="nav-item giohang ms-auto ">
+                                    <a class="nav-link" href="#" id="cartbutton"><i
+                                            class="fa-solid fa-cart-shopping"></i></a>
+                                </li>
+                            </ul>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section>
+        <div class="section">
+            <!-- BEADCRUMD -->
+            <div class=" container-fluid breadcrumb pt-4 ps-3">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="./Trangchu.html">TRANG CHỦ</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">GIỚI THIỆU</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="p-4 mt-4 clearfix introduce-info">
+                <p>
+                    <img class="img-fluid img-thumbnail rounded float-start me-3 title-head-img"
+                        src="./images/images_Phuong/tranggioithieu/il_fullxfull.3679447652_kh74.webp">
+                    Chào mừng đến với cửa hàng phụ kiện điện thoại
+                    <em><strong style="color: #e86747d2;">TinyCase- nơi hội tụ của sáng tạo và đam mê!</strong></em>.
+                    Ở <strong style="color: #e86747d2;">TinyCase</strong>, chúng tôi không chỉ đơn giản là bán phụ kiện, mà còn mang đến cho bạn những trải nghiệm cá nhân hóa tuyệt vời.
+                </p>
+                <p>
+                    <strong style="color: #e86747d2;">TinyCase</strong> với bộ sưu tập đa dạng từ ốp lưng thời trang, bao da cao cấp đến các phụ kiện tiện ích khác, mỗi sản phẩm tại TinyCase đều được chọn lọc kỹ càng, đảm bảo chất lượng và sự tinh tế. 
+                    Hãy để chúng tôi giúp bạn thể hiện phong cách riêng, làm mới chiếc điện thoại của bạn với những phụ kiện độc đáo và cá tính tại TinyCase.    
+                </p>
+                <p>
+                    <strong style="color: #e86747d2;">TinyCase</strong> luôn tiên phong trong việc cập nhật những xu hướng mới nhất, mang đến cho bạn những thiết kế hiện đại và đẳng cấp nhất.
+                    Chúng tôi theo dõi sát sao sự phát triển của công nghệ và thời trang, đảm bảo rằng mỗi sản phẩm không chỉ đẹp mắt mà còn đáp ứng được nhu cầu sử dụng và sự tiện ích tối đa. Mỗi lần ghé thăm TinyCase, bạn sẽ luôn tìm thấy những sản phẩm mới mẻ, bắt kịp xu hướng, và đôi khi, còn là người tiên phong sở hữu những mẫu mã độc nhất trên thị trường.
+                </p>
+                <p>Chúng tôi cam kết mang đến cho khách hàng những trải nghiệm mua sắm tuyệt vời nhất. <strong style="color: #e86747d2;">TinyCase</strong> đảm bảo rằng bạn sẽ nhận được dịch vụ khách hàng chu đáo và tận tâm, với chính sách đổi trả linh hoạt và hỗ trợ sau bán hàng đáng tin cậy. TinyCase không chỉ muốn bạn hài lòng với sản phẩm, mà còn mong muốn xây dựng mối quan hệ lâu dài và bền vững. 
+                    Chúng tôi hứa hẹn sẽ luôn đồng hành cùng bạn trong hành trình làm mới và nâng cấp chiếc điện thoại của mình. 
+                </p>
+                <p> Hãy đến với <strong style="color: #e86747d2;">TinyCase</strong> , nơi sự sáng tạo và đam mê gặp gỡ, và trải nghiệm sự khác biệt trong từng chi tiết!
+                </p>
+            </div>
+        </div>
+
+        <div class="social-container">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-lg-7 mb-5 mb-lg-0">
+                        <div class="imgs-grid">
+                            <div class="grid grid-1"><a href="https://www.instagram.com/tiny.case?igsh=ZWo2NWRiaG13YXhm"
+                                    target="_blank"><img src="./images/images_Phuong/tranggioithieu/instagram.png"></a>
+                            </div>
+                            <div class="grid grid-2"><a href=""
+                                    target="_blank"><img src="./images/images_Phuong/tranggioithieu/zalo.png"></a></div>
+                            <div class="grid grid-3"><a href="https://www.facebook.com/dream.couturess?mibextid=LQQJ4d"
+                                    target="_blank"><img src="./images/images_Phuong/tranggioithieu/facebook.png"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 ps-lg-5">
+                        <h2 class="section-title mb-4">Truyền thông đa phương tiện</h2>
+                        <p class="social-info">Bên cạnh website chính thức, chúng tôi còn có mặt trên các nền tảng truyền thông xã hội sôi động như Instagram và Facebook.
+                            Trên Instagram, chúng tôi không chỉ chia sẻ những hình ảnh đẹp mắt về các sản phẩm mới nhất mà còn mang đến cho bạn những gợi ý phong cách thời trang và cách mix đồ cùng phụ kiện điện thoại. 
+                            Hãy cùng theo dõi để không bỏ lỡ những xu hướng hot nhất từ TinyCase!
+                        </p>
+                        <p class="social-info">Facebook là nơi chúng tôi giao lưu cùng cộng đồng yêu công nghệ và thích tìm hiểu về các sản phẩm mới. 
+                            Tại đây, bạn có thể thảo luận, đặt câu hỏi và nhận được sự tư vấn nhiệt tình từ đội ngũ chăm sóc khách hàng của chúng tôi. Hãy like và follow trang Facebook của TinyCase ngay để luôn cập nhật thông tin và các chương trình khuyến mãi hấp dẫn!
+                            Cả Instagram và Facebook đều là những nền tảng mà TinyCase sử dụng để kết nối chặt chẽ hơn với khách hàng, mang đến cho bạn trải nghiệm mua sắm trực tuyến đầy thú vị và tiện lợi hơn bao giờ hết.
+                            Hãy đồng hành cùng chúng tôi trên mọi nền tảng để khám phá thế giới phụ kiện điện thoại đa dạng và phong phú của TinyCase!
+                            
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container1">
+            <div class="left-section text-center">
+                <img src="./images/images_Phuong/icons/yellow-wavy-lines.png">
+            </div>
+            <div class="right-section">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.58836696083!2d105.82623827387559!3d21.009131388455142!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ac800f450807%3A0x419a49bcd94b693a!2sBanking%20Academy!5e0!3m2!1sen!2s!4v1718303778268!5m2!1sen!2s"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <br>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <!-- Footer-right  -->
+        <div class=" footer-right">
+            <ul class="contact " style="list-style-type: none;">
+                <li class="Cart zoomhinh"><a href="#" type="button" id="giohang"><img
+                            src="images/images_Duyen/giohang.png" alt="Gio hang" height="45px" width="45px"></a></li>
+                <li class=" Facebook zoomhinh"><a href="https://www.facebook.com/dream.couturess?mibextid=LQQJ4d"
+                        type="button"><img src="images/images_Duyen/Facebook.svg" alt="Facebook" height="40px"
+                            width="40px"></a></li>
+                <li class="Instagram zoomhinh"><a href="https://www.instagram.com/tiny.case?igsh=ZWo2NWRiaG13YXhm"
+                        type="button"><img src="images/images_Duyen/Insta.webp" alt="Instagram" height="40px"
+                            width="40px"></a></li>
+                <li class="Zalo zoomhinh"><a href="" type="button"><img src="images/images_Duyen/zalo.png" alt="Zalo"
+                            height="40px" width="40px"></a></li>
+            </ul>
+        </div>
+
+        <!-- footer -->
+        <div class="footer">
+            <div class="container-fluid ">
+                <div class="row ">
+                    <div class=" col-12 col-md-4 tomtat">
+                        <ul class="footer-col">
+                            <p>Thông tin liên hệ</p>
+                            <li class="Hotline">Hotline:<a href="tel:0357194887"> 0357194887</a></li>
+                            <li class="email">Email:<a href="mailto:TinyCase@gmail.com"> TinyCase@gmail.com</a></li>
+                            <li class="website">Website:<a href="#">TinyCase.com</a></li>
+                            <li class="diachi">Địa chỉ: 12 Chùa Bộc, Đống Đa, Hà Nội</li>
+                            <li class="map"><iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.58836696083!2d105.82623827387559!3d21.009131388455142!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ac800f450807%3A0x419a49bcd94b693a!2sBanking%20Academy!5e0!3m2!1sen!2s!4v1718303778268!5m2!1sen!2s"
+                                    width="250" height="80" style="border:0;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"></iframe></li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-md-4 chinhsach">
+                        <ul class="footer-col">
+                            <p>Chính sách</p>
+                            <li class="baohanh"><a href="chinhsach/chinhsachbaohanh.html">Chính sách bảo hành</a></li>
+                            <li class="thanhtoan"><a href="chinhsach/Chinhsachthanhtoan.html">Chính sách thanh toán</a>
+                            </li>
+                            <li class="baomat"><a href="#">Chính sách bảo mật</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-md-4 social">
+                        <ul class="footer-col">
+                            <p>Social</p>
+                            <li class="fb"><a href="#" type="button"><i class="fa-brands fa-facebook"></i></a></li>
+                            <li class="mess"><a href="#" type="button"><i
+                                        class="fa-brands fa-facebook-messenger"></i></a></li>
+                            <li class="ig"><a href="#" type="button"><i class="fa-brands fa-instagram"></i></a></li>
+                            <li class="shopee"><a href="#" type="button"><i class="fa-solid fa-cart-shopping"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright " style=" margin-left: 30px; font-size: 15px; text-align: center;">
+                <p>&copy; 2024 Tiny Case. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <!-- SCRIPT  -->
+    <script>
+        document.getElementById('cartbutton').onclick = function () {
+            alert('Tính năng này đang được cập nhật, mong quý khách thông cảm!');
+        };
+        document.getElementById('giohang').onclick = function () {
+            alert('Tính năng này đang được cập nhật, mong quý khách thông cảm!');
+        };
+        document.getElementById('timkiem').onclick = function () {
+            alert('Tính năng này đang được cập nhật, mong quý khách thông cảm!');
+        };
+        document.getElementById('phukien-link').addEventListener('click', function (event) {
+            window.location.href = 'phukien.html';
+        });
+
+        document.getElementById('linhkien-link').addEventListener('click', function (event) {
+            window.location.href = 'linhkien.html';
+        });
+    </script>
+</body>
+
+</html>
