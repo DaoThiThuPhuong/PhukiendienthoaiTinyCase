@@ -23,6 +23,10 @@
     /* Căn giữa slider trong trang */
 }
 
+.sp_container,
+.tintuc_container {
+    padding: 0 5%;
+}
 /* list product title */
 .title_main_sp {
     position: relative;
@@ -83,17 +87,16 @@
 }
 
 /* products */
-.baosp {
-    border-top: 1px solid #e3e3e3;
+.loadphantrangth61,
+.loadphantrangth62,
+.loadphantrangth63,
+.loadphantrangth64 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 20%);
 }
 .box {
-    width: 100%;
-    background: #fff;
     float: left;
-    border-left: 1px solid #e3e3e3;
-    border-right: 1px solid transparent;
-    border-bottom: 1px solid #e3e3e3;
-    width: 19%;
+    margin: 0 10px 10px 0;
 }
 .box:nth-child(5n+1) {
     clear: both;
@@ -103,11 +106,15 @@
     width: 100%;
     background: #ffffff;
     text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px #00000029;
+    padding: 10px 10px 0 10px;
 }
 .pic_sanpham {
     overflow: hidden;
     box-sizing: border-box;
     position: relative;
+    border-radius: 8px;
 }
 .zoomhinh {
     overflow: hidden;
@@ -169,7 +176,26 @@
 .clear {
     clear: both;
 }
-@media only screen and (max-width: 400px){
+@media only screen and (max-width: 1000px){
+    .title_main_sp:before {
+        width: 45px;
+        height: 36px;
+        left: -42px;
+        top: 3px;
+        background-size: 45px 36px;
+    }
+    .title_main_sp span {
+        font-size: 12px;
+    }
+    .loadphantrangth61,
+    .loadphantrangth62,
+    .loadphantrangth63,
+    .loadphantrangth64 {
+        grid-template-columns: repeat(auto-fit, 25%);
+    }
+    .duoisp {
+        padding: 5px 0;
+    }
     .price_sanpham span {
         font-size: 0.9vw;
     }

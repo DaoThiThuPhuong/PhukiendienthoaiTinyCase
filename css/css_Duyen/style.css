@@ -18,10 +18,10 @@ body {
 }
   
   .header{
-    background-color: rgba(214, 245, 242, 0.2);
+    background-color: rgba(246, 184, 130, 0.2);
   }
   .section{
-    background-color:rgba(214, 245, 242, 0.2);
+    background-color:rgba(246, 184, 130, 0.2);
   }
 
     .headertop {
@@ -58,9 +58,16 @@ body {
     }
    
     .navbar{
-        background-color: rgb(212, 248, 244);
+        background-color:#EE4D2D;
         display: inline-block;
         text-align: center;
+
+    }
+    .navbar a{
+      color: #fff;
+    }
+    .dropdown-menu a{
+      color: black;
     }
      .navbar-brand{
         font-family:'Times New Roman', Times, serif;
@@ -68,9 +75,7 @@ body {
         font-size: 30px;
         margin-left: 15px;
      }
-     .nav-item:hover{
-        text-decoration: underline;
-     }
+    
     .nav-item.dropdown:hover .dropdown-menu {
         display: block;
       }
@@ -135,8 +140,39 @@ body {
      .corevalue{
       margin-top: 30px;
      }
-    
+    .hopqua, .Facebook, .Instagram, .Zalo{
+      animation: shake 0.5s infinite;
+    }
+    @keyframes shake {
+      0% { transform: translate(0, 0); }
+            10% { transform: translate(-1px, 1px); }
+            20% { transform: translate(-1px, -1px); }
+            30% { transform: translate(1px, 1px); }
+            40% { transform: translate(1px, -1px); }
+            50% { transform: translate(0, 1px); }
+            60% { transform: translate(-1px, -1px); }
+            70% { transform: translate(1px, 1px); }
+            80% { transform: translate(-1px, 1px); }
+            90% { transform: translate(1px, -1px); }
+            100% { transform: translate(0, 0); }
+    }
+    /* CSS CHO BANG BAO HANH */
+   table {
+      text-align: left;
+      padding: 30px;
+      margin: 20px;
+   }
+   .table th {
+      padding: 15px;
+      border: solid 1px black;
+   }
+   .table td {
+      padding: 15px;
+      border: solid 1px black;
+      vertical-align: top;
 
+   }
+   
     
      
 
