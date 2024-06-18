@@ -140,7 +140,7 @@
                 <a class="nav-link " aria-current="page" href="/tranggioithieu.html">GIỚI THIỆU</a>
               </li>
               <li class="nav-item dropdown px-3">
-                <a class="nav-link dropdown-toggle" href="/phukien.html" role="button" data-bs-toggle="dropdown"
+                <a class="nav-link dropdown-toggle" href="/phukien.html" id="phukien-link" role="button" data-bs-toggle="dropdown"
                   aria-expanded="false">PHỤ KIỆN ĐIỆN THOẠI</a>
                 <ul class="dropdown-menu">
                   <li><a class="dropdown-item" href="/trangchuyenmuc/phukiendienthoai/sanphambanchay.html">Sản phẩm bán chạy</a></li>
@@ -155,7 +155,7 @@
                 </ul>
               </li>
               <li class="nav-item dropdown px-3">
-                <a class="nav-link dropdown-toggle" href="" type="button" data-bs-toggle="dropdown"
+                <a class="nav-link dropdown-toggle" href="/linhkien.html" id="linhkien-link" type="button" data-bs-toggle="dropdown"
                   aria-expanded="false">LINH KIỆN ĐIỆN THOẠI</a>
                 <ul class="dropdown-menu">
                   <li><a class="dropdown-item" href="/trangchuyenmuc/linhkiendienthoai/capsacdt.html">Cáp sạc điện thoại</a></li>
@@ -198,7 +198,13 @@
               </ol>
             </nav>
           </div>
-          <!-- NOI DUNG -->
+         
+           <!-- MUC LUC -->
+            <div class="mucluc" style="display: flex; text-align: center; margin: 20px;margin-left: 50px;">
+              <div class="btn btn-primary me-2"><a href="#1">1. CHÍNH SÁCH ĐỔI TRẢ</a></div>
+              <div class="btn btn-primary "><a href="#2">2. CHÍNH SÁCH BẢO HÀNH</a></div>
+            </div>
+             <!-- NOI DUNG -->
           <div class="text" style="padding: 30px;">
             <h6>Áp dụng từ ngày 08/06/2024:
                 <br>TinyCase chân thành cảm ơn Quý khách hàng, dưới đây là chi tiết chính sách bảo hành của TinyCase áp dụng với tất cả các sản phẩm, TinyCase luôn nỗ lực để có được chất lượng dịch vụ tốt nhất dành cho Quý khách hàng.</h6>
@@ -263,7 +269,7 @@
                 <li>Máy đã được gỡ các loại tài khoản cá nhân như iCloud, Gmail, Mi account …</li>
                 <li>Lỗi điểm chết màn hình : màn hình có từ 3 điểm chết trở lên hoặc 1 điểm chết có kích thước lớn hơn 1mm đối với điện thoại và từ 5 điểm chết trở lên đối với laptop.</li>
             </ul>
-            <h4>2. Chính sách về bảo hành</h4>
+            <div id="2"><h4>2. Chính sách về bảo hành</h4></div>
             <p>TinyCase cam kết tất cả các sản phẩm bán ra tại TinyCase đều là sản phẩm chính hãng, và nhận được các chế độ bảo hành chính hãng.
             <br>Quý khách hàng có thể tới trực tiếp các Trung tâm bảo hành chính hãng hoặc tới các cửa hàng TinyCase gần nhất để được tiếp nhận bảo hành chính hãng.
             <br>Quý khách xem địa chỉ trung tâm bảo hành chính hãng tại đây: https://TinyCase.com/trung-tam-bao-hanh
@@ -357,9 +363,9 @@
          <div class="col-12 col-md-4 chinhsach">
            <ul class="footer-col">
              <p>Chính sách</p>
-             <li class="baohanh"><a href="chinhsach/chinhsachbaohanh.html">Chính sách bảo hành</a></li>
+             <li class="baohanh"><a href="">Chính sách bảo hành</a></li>
              <li class="thanhtoan"><a href="Chinhsachthanhtoan.html">Chính sách thanh toán</a></li>
-             <li class="baomat"><a href="#">Chính sách bảo mật</a></li>
+             <li class="baomat"><a href="Chinhsachbaomat.html">Chính sách bảo mật</a></li>
            </ul>
          </div>
          <div class="col-12 col-md-4 social">
@@ -396,5 +402,10 @@
        {
          alert('Tính năng này đang được cập nhật, mong quý khách thông cảm!');
        };
+       document.getElementById('phukien-link').addEventListener('click', function(event) {
+      window.location.href = '/phukien.html';});
+
+      document.getElementById('linhkien-link').addEventListener('click', function(event) {
+        window.location.href = '/linhkien.html';});
      </script>
 </body>

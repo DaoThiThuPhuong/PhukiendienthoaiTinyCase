@@ -172,6 +172,12 @@ body {
       vertical-align: top;
 
    }
+   /* CSS CHO MUC LUC TRANG CHINH SACH BAO HANH */
+   .mucluc a{
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+   }
    
     
      

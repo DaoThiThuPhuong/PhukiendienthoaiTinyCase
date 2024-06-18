@@ -262,12 +262,12 @@ body {
 
 .body-middle-suggestion-top {
     background-color: #FFFFFF;
-    color: rgb(0, 84, 166);
+    color: rgb(247, 75, 75);
     display: flex;
     justify-content: center;
     font-size: 16px;
     padding: 20px;
-    border-bottom: 4px solid rgb(0, 84, 166);
+    border-bottom: 4px solid rgb(247, 75, 75);
 }
 
 .body-middle-suggestion-content {
@@ -335,7 +335,7 @@ body {
 }
 
 .body-middle-suggestion-content-items #suggestion-prize {
-    color: rgb(0, 84, 166);
+    color: rgb(247, 75, 75);
     position: absolute;
     font-size: 16px;
     bottom: 10px;
