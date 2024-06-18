@@ -1,0 +1,106 @@
+.title-head-img {
+    width: 20%;
+}
+
+.introduce-info {
+    background-color: rgb(252, 252, 252);
+    line-height: 1.8em;
+    color: #555;
+    border: ridge 4px #e86747d2;
+    border-radius: 25px;
+    text-align: justify;
+}
+
+.social-container {
+    padding: 7rem;
+}
+
+.social-container .imgs-grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[];
+    grid-template-columns: repeat(27, 1fr);
+    position: relative;
+}
+
+.social-container .imgs-grid:before {
+    position: absolute;
+    content: "";
+    width: 255px;
+    height: 217px;
+    background-image: url("../../images/images_Phuong/icons/orange.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    -webkit-transform: translate(-40%, -40%);
+    -ms-transform: translate(-40%, -40%);
+    transform: translate(-40%, -40%);
+    z-index: -1;
+}
+
+.social-container .imgs-grid .grid.grid-1 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 18;
+    grid-column: 1 / span 15;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 27;
+    grid-row: 1 / span 27;
+}
+
+.social-container .imgs-grid .grid.grid-2 {
+    -ms-grid-column: 19;
+    -ms-grid-column-span: 27;
+    grid-column: 3 / span 14;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 5;
+    grid-row: 18 / span 1;
+}
+
+.social-container .imgs-grid .grid.grid-3 {
+    -ms-grid-column: 14;
+    -ms-grid-column-span: 16;
+    grid-column: 18 / span 16;
+    -ms-grid-row: 6;
+    -ms-grid-row-span: 27;
+    grid-row: 6 / span 13;
+}
+
+.social-container .imgs-grid .grid img {
+    border-radius: 20px;
+    max-width: 100%;
+}
+
+.social-info {
+    text-align: justify;
+}
+
+.container1 {
+    display: flex;
+    height: 80vh;
+}
+
+.left-section {
+    flex: 5;
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+.left-section img {
+    max-width: 60%;
+    height: auto;
+}
+
+.right-section {
+    flex: 7;
+    background-color: #f5e1e1;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+iframe {
+    width: 90%;
+    height: 90%;
+    border: none;
+}
