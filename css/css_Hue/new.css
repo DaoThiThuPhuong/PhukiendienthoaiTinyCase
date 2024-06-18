@@ -4,7 +4,7 @@
     align-items: center;
     overflow: hidden;
     position: relative;
-    margin: 20px; /* Khoảng cách từ khung tin tức đến lề trang */
+    /* margin: 20px; Khoảng cách từ khung tin tức đến lề trang */
 }
 .news-wrapper {
     overflow: hidden;
