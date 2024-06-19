@@ -1431,6 +1431,7 @@
    <!-- footer -->
   <footer>
    <!-- Footer-right  -->
+    
    <div class=" footer-right">
     <ul class="contact " style="list-style-type: none;">
       <li class="Cart zoomhinh"><a href="" type="button" id="giohang"><img src="./images/images_Duyen/giohang.png" alt="Gio hang" height="45px"
@@ -1441,6 +1442,9 @@
             height="40px" width="40px"></a></li>
       <li class="Zalo zoomhinh"><a href="" type="button"><img src="./images/images_Duyen/zalo.png" alt="Zalo" height="40px"
             width="40px"></a></li>
+      <li><div id="scrolltop" class="show" style="display: none; align-items: center; justify-content: center; background-color: rgba(168, 163, 163, 0.1); height: 45px; width: 45px; border-radius: 50%; ">
+        <span style="font-size: 24px;"><a href="" type="button"><i class="fa-solid fa-arrow-up"></i></a></span>
+      </div></li>
     </ul>
   </div>
   
@@ -1521,6 +1525,22 @@
       document.getElementById('linhkien-link').addEventListener('click', function(event) {
         window.location.href = './linhkien.html';});
     </script>
+    <script>
+      // Kiểm tra vị trí cuộn và hiển thị hoặc ẩn nút scrolltop
+      window.onscroll = function() {
+          var scrolltop = document.getElementById('scrolltop');
+          if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+              scrolltop.style.display = "flex";
+          } else {
+              scrolltop.style.display = "none";
+          }
+      };
+  
+      // Kéo trang lên đầu khi bấm vào nút scrolltop
+      document.getElementById('scrolltop').addEventListener('click', function() {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+  </script>
     
     <!--New-->
     <script src="./css/css_Hue/new.js"></script>

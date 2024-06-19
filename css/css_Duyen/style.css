@@ -122,6 +122,13 @@ body {
         margin-bottom: 0px;
      }
      
+     #scroll-top.show {
+      opacity: 1;
+      visibility: visible;
+      z-index: 900;
+  }
+  
+
      .footer-right{
         right: 1.5%;
         bottom: 10%;
