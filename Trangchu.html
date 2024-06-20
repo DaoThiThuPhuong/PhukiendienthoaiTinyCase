@@ -226,20 +226,16 @@
       <!-- POPUP -->
       <div class="popup" style="position: fixed; margin-left: 0px; bottom: 30%; z-index: 1000;">
         <div class="container ">
-          <a class="hopqua" href="#" type="button" data-bs-toggle="modal" data-bs-target="#Modalpopup"><i class="fa-solid fa-gift" style="font-size: 40px;"></i></a>
+          <a class="hopqua" type="button" onclick="showPopup()"><i class="fa-solid fa-gift" style="font-size: 40px; "></i></a>
         </div>
       </div>
-
-      <!-- Modal Popup -->
-      <div class="modal" id="Modalpopup" tabindex="-1">
-        <div class="modal-dialog">
-          <div class="modal-content">
-              <span><div data-bs-dismiss="modal" data-bs-target="Close" style="transform: rotate(180deg);">X</div></span>
-              <img src="./images/images_Duyen/popup.png" alt="">
-          </div>
+    <div id="overlay">    
+        <div id="popupContainer">
+            <img id="popupImage" src="./images/images_Duyen/popup.png" alt="Popup Image"/>
+            <button id="closeButton" onclick="closePopup()">X</button>
         </div>
-      </div>
-
+    </div> 
+    
       <!-- PHUONG PASTE 3 MODULE VAO DAY NHE -->
        <!-- SLIDE SHOW -->
       <div class="col-12" style="padding-top: 20px;">
@@ -1443,7 +1439,7 @@
       <li class="Zalo zoomhinh"><a href="" type="button"><img src="./images/images_Duyen/zalo.png" alt="Zalo" height="40px"
             width="40px"></a></li>
       <li><div id="scrolltop" class="show" style="display: none; align-items: center; justify-content: center; background-color: rgba(168, 163, 163, 0.1); height: 45px; width: 45px; border-radius: 50%; ">
-        <span style="font-size: 24px;"><a href="" type="button"><i class="fa-solid fa-arrow-up"></i></a></span>
+        <span style="font-size: 24px;"><a type="button" onclick="showscroll()"><i class="fa-solid fa-arrow-up" style="color: rgb(0, 84, 166);"></i></a></span>
       </div></li>
     </ul>
   </div>
@@ -1529,9 +1525,10 @@
       document.getElementById('linhkien-link').addEventListener('click', function(event) {
         window.location.href = './linhkien.html';});
     </script>
+    <!-- SCRIPT CHO BUTTON SCROLL -->
     <script>
       // Kiểm tra vị trí cuộn và hiển thị hoặc ẩn nút scrolltop
-      window.onscroll = function() {
+      window.onscroll = function onscroll() {
           var scrolltop = document.getElementById('scrolltop');
           if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
               scrolltop.style.display = "flex";
@@ -1541,10 +1538,21 @@
       };
   
       // Kéo trang lên đầu khi bấm vào nút scrolltop
-      document.getElementById('scrolltop').addEventListener('click', function() {
+      document.getElementById('scrolltop').addEventListener('click', function showscroll() {
           window.scrollTo({ top: 0, behavior: 'smooth' });
       });
   </script>
+  <!-- SCRIPT CHO POPUP -->
+  <script>
+    function showPopup() {
+        document.getElementById('overlay').style.display = 'flex';
+        document.getElementById("popupContainer").style.display = "block";
+    }
+    function closePopup() {
+        document.getElementById('overlay').style.display = 'none';
+        document.getElementById("popupContainer").style.display = "none";
+    }
+</script>
     
     <!--New-->
     <script src="./css/css_Hue/new.js"></script>
