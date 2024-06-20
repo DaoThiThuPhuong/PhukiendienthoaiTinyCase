@@ -244,11 +244,21 @@
                 </div>
             </div>
             <div class="product-actions"> <!-- Nút hành động sản phẩm -->
-                <button class="button-add">Thêm Vào Giỏ Hàng</button>
-                <button class="button-buy">Mua Ngay</button>
+                <button class="button-add" id="add">Thêm Vào Giỏ Hàng</button>
+                <button class="button-buy" id="buy">Mua Ngay</button>
             </div>
         </div>
     </div>
+    <script>
+      document.getElementById('add').onclick = function() 
+    {
+      alert('Sản phẩm đã được thêm vào giỏ hàng thành công!');
+    };
+    document.getElementById('buy').onclick = function() 
+    {
+      alert('Tính năng này hiện đang được phát triển! Mong quý khách thông cảm!');
+    };
+    </script>
     <div class="detail-container"><!--Chi tiết sanr phẩm -->
         <div class="detail-title">CHI TIẾT SẢN PHẨM</div>
         <div class="detail-categories">
